@@ -11,7 +11,7 @@
 <body>
 
 
-
+<!-- 初试的输入状态页面 -->
     <div class="init_wrap">
     	<div class="init_wrap_container">
     		<div style="height: 60px; background-color: transparent;width: 100%;"></div>
@@ -117,7 +117,7 @@
 
     <div class="content_wrap">
     	
-
+<!-- 展示魔方复原页面 -->
 		<div class="big_box_range">
 				<div>
 	                <span>X轴</span>
