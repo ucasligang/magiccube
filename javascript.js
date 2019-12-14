@@ -80,7 +80,7 @@ window.onload = function(){
         [324, 324, -324]//27
     ];
 
-    //为每个小立方体编号！每个cube都有固定的编号,在旋转的时候是不会变化的,只是编导不同的空间位置
+    //为每个小立方体编号！每个cube都有固定的编号,在旋转的时候编号是不会变化的,只是编到不同的空间位置
     var defaultBigSixFace = {
         'u':[
                 19,  20, 21,
@@ -115,7 +115,7 @@ window.onload = function(){
     };
 
     // 每个大面的小块所展现的颜色
-    //每个cube的颜色是变化的,每个色块是在每次旋转都会变化的,所以每次旋转后都会更新每个大面包含的小cube的面颜色
+    //每个cube的颜色是变化的,每个色块在每次旋转都会变化,所以每次旋转后都会更新每个大面包含的小cube的面颜色
     var bigSixFace = {
         'u':[
                 'orange',   'orange',   'orange',
@@ -214,7 +214,7 @@ window.onload = function(){
         })
     }
 
-    // 当旋转时,每个有固定编号的小立方体，上面的颜色根据参数的不同进行变换、、那个面旋转，轴，角度，方向，颜色的数组
+    // 当旋转时,每个有固定编号的小立方体，上面的颜色根据参数的不同进行变换：那个面旋转，轴，角度，方向，颜色的数组
     function changeFace(whichFace, axis, deg, dir, faceArr) {
 
         //旋转180度,顺时针和逆时针结果一样
@@ -616,7 +616,7 @@ window.onload = function(){
             })
         }
 
-        // 调用小cubea面变换函数
+        // 调用小cube面变换函数
         changeFace(whichFace, axis, deg, dir, bigSixFace);
         
         //避免渲染和旋转动作同时进行 ,旋转的时间根据角度不同设置不同的值
@@ -2496,7 +2496,7 @@ window.onload = function(){
     }
 
     // 小鱼 → 顶层ok
-    function topFaceRotate (face, dir) {  //zheng 1 ni 0
+    function topFaceRotate (face, dir) {  //正 1 逆 0
         let dirF = (dir === 1) ? 0 : 1;
         pushAndChange([face, 90, dir], autoStep);
         pushAndChange(['u', 90, dir], autoStep);
