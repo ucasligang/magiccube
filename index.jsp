@@ -159,7 +159,7 @@
 				<button class="btn04">-180-R</button>
 				<button class="btn05">-180-D</button>
 				<button class="btn06">-180-B</button>
-				<button class="btn20">random</button>
+				<button class="btn20">随机打乱</button>
 				<!-- <button class="testF5">test开关</button> -->
 			</div>
 			<div class="rotate_btns_01">
@@ -183,7 +183,7 @@
 				<button class="cube_reset">色块复位</button>
 				<button class="last_step">上一步</button>
 				<button class="next_step">下一步</button>
-				<button class="steps_auto">自动完成</button>
+				<button class="steps_auto">系统求解</button>
 				<button class="btnZ">暂停</button>
 
 			</div>
